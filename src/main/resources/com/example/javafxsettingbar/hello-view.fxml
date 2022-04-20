@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="topBar" prefHeight="73.0" prefWidth="480.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <ImageView fx:id="setting" layoutX="40.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0">
+               <image>
+                  <Image url="@../../../settingIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="user" layoutX="155.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../user.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="awards" layoutX="293.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="155.0">
+               <image>
+                  <Image url="@../../../award.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="stats" layoutX="408.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="408.0" AnchorPane.rightAnchor="40.0">
+               <image>
+                  <Image url="@../../../stat.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="settingScene" layoutY="91.0" prefHeight="523.0" prefWidth="480.0" style="-fx-background-color: #3D4956;" />
+      <AnchorPane fx:id="userScene" layoutY="91.0" prefHeight="523.0" prefWidth="480.0" style="-fx-background-color: #3D4956;" />
+      <AnchorPane fx:id="awardsScene" layoutY="91.0" prefHeight="523.0" prefWidth="480.0" style="-fx-background-color: #3D4956;" />
+      <AnchorPane fx:id="statsScene" layoutY="91.0" prefHeight="523.0" prefWidth="480.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <Label layoutX="33.0" layoutY="43.0" text="Touch ENABLED" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ToggleButton layoutX="307.0" layoutY="41.0" mnemonicParsing="false" text="ToggleButton" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
